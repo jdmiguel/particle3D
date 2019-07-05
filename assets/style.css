@@ -14,3 +14,58 @@ body {
     width: 100%;
     height: 100%;
 }
+
+svg {
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+    z-index: 3;
+    fill: #FFFFFF;
+    opacity: 0.6;
+}
+
+.octo-arm {
+    fill: #000000;
+    transform-origin: 130px 106px;
+}
+
+.octo-body {
+    fill: #000000;
+    transform-origin: 130px 106px;
+}
+
+svg:hover .octo-arm{
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@media (max-width:500px) {
+    svg:hover .octo-arm {
+        animation: none
+    }
+    svg:hover {
+      animation: octocat-wave 560ms ease-in-out
+    }
+}
+  @media (max-width:768px) {
+    svg {
+      width: 55px;
+      height: 55px;
+    }
+}
+  
+@keyframes octocat-wave {
+    0%,
+    100% {
+      transform: rotate(0)
+    }
+    20%,
+    60% {
+      transform: rotate(-25deg)
+    }
+    40%,
+    80% {
+      transform: rotate(10deg)
+    }
+}
+  
