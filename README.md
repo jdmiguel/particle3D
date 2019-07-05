@@ -2,8 +2,9 @@
 
 ### DESCRIPTION
 
-Particles animation in 3D context
+3D animation with particles
 
-### DEVELOPMENT
+### TECHNOLOGIES
 
-[Three.js](https://threejs.org/) library
+* [Three.js](https://threejs.org/) (3d canvas library)
+* SPE (particle library)
