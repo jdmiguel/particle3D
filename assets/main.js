@@ -28,6 +28,17 @@
         return threeColor;
     }
 
+    // Resize
+    window.addEventListener('resize', function() {
+        const SCREEN_WIDTH_UPDATED = window.innerWidth;
+        const SCREEN_HEIGHT_UPDATED = window.innerHeight;
+
+        camera.aspect = SCREEN_WIDTH_UPDATED / SCREEN_HEIGHT_UPDATED;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( SCREEN_WIDTH_UPDATED, SCREEN_HEIGHT_UPDATED );
+    });
+
     // Init particles
     let particleGroup, emitter = null;
     const numEmitters = 250;
