@@ -15,32 +15,62 @@ body {
     height: 100%;
 }
 
-svg {
-    position: absolute;
-    top: 0;
-    border: 0;
-    right: 0;
-    z-index: 3;
-    fill: #FFFFFF;
-    opacity: 0.6;
+#layout{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
-.octo-arm {
+#logo{
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  z-index: 2;
+  transform: scale(2);
+}
+
+#github-corner {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  fill: #FFFFFF;
+  opacity: 0.6;
+}
+
+#octo-arm {
     fill: #000000;
     transform-origin: 130px 106px;
 }
 
-.octo-body {
+#octo-body {
     fill: #000000;
     transform-origin: 130px 106px;
 }
 
-svg:hover .octo-arm{
+#github-corner:hover #octo-arm{
     animation: octocat-wave 560ms ease-in-out;
 }
 
+#footer{
+  position: absolute;
+  left: calc(50% - 79px);
+  bottom: 20px;
+  z-index: 2;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+#footer :any-link{
+  color: #FFFFFF;
+}
+
 @media (max-width:500px) {
-    svg:hover .octo-arm {
+    svg:hover #octo-arm {
         animation: none
     }
     svg:hover {
