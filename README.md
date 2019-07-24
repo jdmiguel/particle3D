@@ -7,4 +7,4 @@
 ### TECHNOLOGIES
 
 * [Three.js](https://threejs.org/) (3d canvas library)
-* SPE (particle library)
+* [SPE](https://github.com/squarefeet/ShaderParticleEngine) (particle library)
